@@ -1,0 +1,1 @@
+# Elongation_Ecoli_EF-Tu_L7L12
