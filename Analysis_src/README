@@ -1,0 +1,41 @@
+This folder contains the following Fortran scripts, for analysis of simulation runs:
+
+	'Makefile' -- makefile to compile all necessary scripts on compute cluster or local desktop
+
+	PROGRAMS:
+
+		'bin_msd_tri.f90' - calculation of mean squared displacement as a function of lag time
+
+		'kd_state_percbound.f90' -- calculation of fraction of bound ternary complexes
+
+		'nc_dist_tri.f90' -- calculation of coordination number distributions
+
+		'pair_dist_func.f90' -- calculation of radial distribution function, g(r)
+
+		'plot_ssf.f90' -- calculation of static structure factor, S(q)
+
+
+	MODULES:
+
+		'mod_cells.f90' -- creates cells within periodic domain to speed up calculations
+
+		'mod_constants.f90' -- definitions of commonly-used fixed constants, e.g. pi
+
+		'mod_data.f90' -- storage and reading of particle trajectory data
+
+		'mod_domain.f90' -- establishing dimensions and values of periodic boundary domain
+
+		'mod_fftw3.f90' -- FFT inclusion
+
+		'mod_group.f90' -- create groups of particles for evaluation of interaction potentials, etc.
+
+		'mod_particle.f90' -- particle type, with attributes of size, position, etc.
+
+		'mod_stat_func.f90' -- statistical functions for calculation, called in all programs
+
+
+It also contains the following Python source scripts for calculation of binding time distributions.
+
+	'search.py' -- generates binding matrices (.npy), N_rib by N_TC, over time
+
+	'bound_val.py' -- identifies duration of TC-ribosome binding events from the above binding matrices
