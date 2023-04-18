@@ -1,0 +1,11 @@
+This folder contains all of the analysis scripts, as follows:
+
+'Microstructure.ipynb' -- Figures 2B, 5B, S2, S5, S8A. Static structure factors S(q) as a function of attraction strength, valency, and cytoplasmic volume fraction. Radial distribution functions g(r) as a function of attraction strength, valency, cytoplasmic volume fraction, and system polydispersity.
+
+'Binding.ipynb' -- Figures 4, 5D-E, S6, S7, S10, S11. Fraction of ribosome-bound ternary complexes and binding affinity of the ribosome-ternary complex interaction as a function of attraction strength, valency, and cytoplasmic volume fraction. Includes calculation of extrapolated in vivo bound fraction to higher growth rates, and validation of Eq. 11. Coordination number distributions for isotropically attractive voxels at a range of strengths, and 16kT limited valency voxels.
+
+'Dynamics.ipynb' -- Figures 2C, 3, 5C, S1, S3, S4, S8B, S9, S12. Derivation of scaling factor to account for dynamic impacts of hydrodynamic interactions and confinement. Mean square displacement and long-time self-diffusivities for ternary complexes, ribosomes, and native proteins as a function of attraction strength, valency, and cytoplasmic volume fraction. Effective viscosity experienced by ternary complexes as a function of attraction strength, valency, and cytoplasmic volume fraction. TC-ribosome binding time distributions in limited-valency voxels as a function of attraction strength.
+
+'ElongationLatency.ipynb' -- Figures 6, S13, S14. Extraction of transport & reaction latencies from simulation data, and calculation of bulk elongation latencies comparable to experiments. Includes accounting for physiological growth rate-dependent distributions in codon and tRNA abundances. Calculation of intra-ribosomal reaction latencies used in simulations, based on well-defined kinetic rate parameters (see Maheshwari et al., 2022, mBio). 
+
+'L7L12_CopyNumber.ipynb' -- Figure 7. Probability distributions of ribosome-TC binding event durations and TC-sampling frequency per ribosome, for limited-valency translation voxels with L7/L12 copy numbers c = 2, 4, 6, 8. Tradeoff between durable binding and frequent sampling of new TCs, as a function of L7/L12 copy number. Distribution of minimal doubling times across more than 350 bacteria, binned by their physiological L7/L12 copy number.
